@@ -6,16 +6,28 @@
 //
 
 import SwiftUI
+import Darwin
+struct memesStruct:Identifiable {
+    let id = UUID()
+    public var meme: Meme
+}
 
 struct ContentView: View {
+    let viewModel = MemeViewModel()
+    private var memes:[memesStruct] = [memesStruct(meme: Meme(id: 1, bottomText: "a", image: "a", name: "a", tags: "a", topText: "a"))]
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+       
+        List(memes){ meme in
+            Text(meme.meme.name)
         }
-        .padding()
+        .onAppear(){
+            Task{
+                await viewModel.executeGetTopMemes()
+            }
+        }
+        .refreshable {
+             await viewModel.executeGetTopMemes()
+           }
     }
 }
 
