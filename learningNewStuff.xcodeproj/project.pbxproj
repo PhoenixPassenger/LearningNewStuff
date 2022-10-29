@@ -14,6 +14,15 @@
 		5B6EF67F290D6EFD00D7BE75 /* learningNewStuffTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6EF67E290D6EFD00D7BE75 /* learningNewStuffTests.swift */; };
 		5B6EF689290D6EFD00D7BE75 /* learningNewStuffUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6EF688290D6EFD00D7BE75 /* learningNewStuffUITests.swift */; };
 		5B6EF68B290D6EFD00D7BE75 /* learningNewStuffUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6EF68A290D6EFD00D7BE75 /* learningNewStuffUITestsLaunchTests.swift */; };
+		5B6EF69A290D714D00D7BE75 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6EF699290D714D00D7BE75 /* Endpoint.swift */; };
+		5B6EF69D290D717500D7BE75 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6EF69C290D717500D7BE75 /* RequestMethod.swift */; };
+		5B6EF69F290D719900D7BE75 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6EF69E290D719900D7BE75 /* RequestError.swift */; };
+		5B6EF6A1290D71F300D7BE75 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6EF6A0290D71F300D7BE75 /* HTTPClient.swift */; };
+		5B6EF6A4290D723100D7BE75 /* MemeMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6EF6A3290D723100D7BE75 /* MemeMaker.swift */; };
+		5B6EF6A7290D738E00D7BE75 /* MemesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6EF6A6290D738E00D7BE75 /* MemesService.swift */; };
+		5B6EF6AA290D742A00D7BE75 /* Memes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6EF6A9290D742A00D7BE75 /* Memes.swift */; };
+		5B6EF6AC290D746800D7BE75 /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6EF6AB290D746800D7BE75 /* Meme.swift */; };
+		5B6EF6AE290D772F00D7BE75 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6EF6AD290D772F00D7BE75 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +53,16 @@
 		5B6EF684290D6EFD00D7BE75 /* learningNewStuffUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = learningNewStuffUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B6EF688290D6EFD00D7BE75 /* learningNewStuffUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = learningNewStuffUITests.swift; sourceTree = "<group>"; };
 		5B6EF68A290D6EFD00D7BE75 /* learningNewStuffUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = learningNewStuffUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5B6EF699290D714D00D7BE75 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		5B6EF69C290D717500D7BE75 /* RequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
+		5B6EF69E290D719900D7BE75 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
+		5B6EF6A0290D71F300D7BE75 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		5B6EF6A3290D723100D7BE75 /* MemeMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeMaker.swift; sourceTree = "<group>"; };
+		5B6EF6A6290D738E00D7BE75 /* MemesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemesService.swift; sourceTree = "<group>"; };
+		5B6EF6A9290D742A00D7BE75 /* Memes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memes.swift; sourceTree = "<group>"; };
+		5B6EF6AB290D746800D7BE75 /* Meme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
+		5B6EF6AD290D772F00D7BE75 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		5B6EF6AF290D817A00D7BE75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +113,14 @@
 		5B6EF66C290D6EFB00D7BE75 /* learningNewStuff */ = {
 			isa = PBXGroup;
 			children = (
+				5B6EF6AF290D817A00D7BE75 /* Info.plist */,
+				5B6EF6A8290D742000D7BE75 /* Models */,
+				5B6EF697290D705D00D7BE75 /* Services */,
 				5B6EF66D290D6EFB00D7BE75 /* learningNewStuffApp.swift */,
 				5B6EF66F290D6EFB00D7BE75 /* ContentView.swift */,
 				5B6EF671290D6EFD00D7BE75 /* Assets.xcassets */,
 				5B6EF673290D6EFD00D7BE75 /* Preview Content */,
+				5B6EF6AD290D772F00D7BE75 /* ViewModel.swift */,
 			);
 			path = learningNewStuff;
 			sourceTree = "<group>";
@@ -125,6 +148,60 @@
 				5B6EF68A290D6EFD00D7BE75 /* learningNewStuffUITestsLaunchTests.swift */,
 			);
 			path = learningNewStuffUITests;
+			sourceTree = "<group>";
+		};
+		5B6EF697290D705D00D7BE75 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5B6EF698290D706400D7BE75 /* MemeMaker */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5B6EF698290D706400D7BE75 /* MemeMaker */ = {
+			isa = PBXGroup;
+			children = (
+				5B6EF6A5290D738100D7BE75 /* Call */,
+				5B6EF6A2290D722500D7BE75 /* Endpoints */,
+				5B6EF69B290D715200D7BE75 /* Base */,
+			);
+			path = MemeMaker;
+			sourceTree = "<group>";
+		};
+		5B6EF69B290D715200D7BE75 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5B6EF699290D714D00D7BE75 /* Endpoint.swift */,
+				5B6EF69C290D717500D7BE75 /* RequestMethod.swift */,
+				5B6EF69E290D719900D7BE75 /* RequestError.swift */,
+				5B6EF6A0290D71F300D7BE75 /* HTTPClient.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5B6EF6A2290D722500D7BE75 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				5B6EF6A3290D723100D7BE75 /* MemeMaker.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		5B6EF6A5290D738100D7BE75 /* Call */ = {
+			isa = PBXGroup;
+			children = (
+				5B6EF6A6290D738E00D7BE75 /* MemesService.swift */,
+			);
+			path = Call;
+			sourceTree = "<group>";
+		};
+		5B6EF6A8290D742000D7BE75 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5B6EF6A9290D742A00D7BE75 /* Memes.swift */,
+				5B6EF6AB290D746800D7BE75 /* Meme.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +334,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B6EF69D290D717500D7BE75 /* RequestMethod.swift in Sources */,
+				5B6EF6AA290D742A00D7BE75 /* Memes.swift in Sources */,
+				5B6EF69F290D719900D7BE75 /* RequestError.swift in Sources */,
+				5B6EF6AE290D772F00D7BE75 /* ViewModel.swift in Sources */,
+				5B6EF6A1290D71F300D7BE75 /* HTTPClient.swift in Sources */,
+				5B6EF6A4290D723100D7BE75 /* MemeMaker.swift in Sources */,
 				5B6EF670290D6EFB00D7BE75 /* ContentView.swift in Sources */,
+				5B6EF6A7290D738E00D7BE75 /* MemesService.swift in Sources */,
+				5B6EF69A290D714D00D7BE75 /* Endpoint.swift in Sources */,
 				5B6EF66E290D6EFB00D7BE75 /* learningNewStuffApp.swift in Sources */,
+				5B6EF6AC290D746800D7BE75 /* Meme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +506,7 @@
 				DEVELOPMENT_TEAM = 795A25396T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = learningNewStuff/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +536,7 @@
 				DEVELOPMENT_TEAM = 795A25396T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = learningNewStuff/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
